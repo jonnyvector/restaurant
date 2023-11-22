@@ -40,7 +40,12 @@ const containers = [
     id: "location",
     heading: "Our Location",
     image: mapImage,
-    body: "Lansieaw",
+    body: [
+      "Lansieaw Complex",
+      "175 Soi Wat Umong",
+      "Suthep, Chang Wat",
+      "Chiang Mai 50200",
+    ],
   },
 ];
 
@@ -75,11 +80,11 @@ const home = () => {
     }
     div.appendChild(containerDiv);
 
-    if (element.id !== "hours") {
+    if (element.id === "story") {
       body.innerText = element.body;
       containerDiv.appendChild(body);
     }
-    if (element.id === "hours") {
+    if (element.id === "hours" || element.id === "location") {
       element.body.forEach((day) => {
         const line = document.createElement("p");
         line.innerText = day;
@@ -87,6 +92,7 @@ const home = () => {
         line.classList.add("list");
       });
     }
+
     body.classList.add("text");
   });
   return div;
