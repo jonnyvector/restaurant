@@ -51,16 +51,12 @@ const containers = [
 
 console.log(containers);
 
-dinkyImage.src = Logo;
-dinkyImage.style.width = "15rem";
-
 const home = () => {
   const div = document.createElement("div");
   div.style.display = "flex";
   div.style.flexDirection = "column";
   div.style.alignItems = "center";
   div.style.justifyContent = "center";
-  div.appendChild(dinkyImage);
 
   containers.forEach((element) => {
     const containerDiv = document.createElement("div");
@@ -68,7 +64,7 @@ const home = () => {
     const body = document.createElement("p");
 
     containerDiv.setAttribute("id", element.id);
-    containerDiv.classList.add("home-container");
+    containerDiv.classList.add("container");
 
     heading.innerText = element.heading;
     heading.classList.add("heading");
