@@ -3,6 +3,7 @@ import { home } from "./modules/home";
 import { menu } from "./modules/menu";
 import { contact } from "./modules/contact";
 import "./style.css";
+
 const content = document.querySelector("#content");
 const navLinks = document.querySelectorAll(".nav-links");
 const div = document.createElement("div");
