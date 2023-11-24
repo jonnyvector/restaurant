@@ -1,4 +1,3 @@
-import Logo from "../images/dinkysbbq.jpeg";
 import Cactus from "../images/Cactus.svg";
 import CowboyHat from "../images/cowboy-hat.svg";
 import Smoker from "../images/Smoker.svg";
